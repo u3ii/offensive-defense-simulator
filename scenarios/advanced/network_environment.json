@@ -1,0 +1,22 @@
+{
+    "scenario_name": "Network Environment",
+    "difficulty": "advanced",
+    "targets": [
+        {
+            "name": "Web Server",
+            "ip": "192.168.1.10",
+            "services": [
+                {"name": "SSH", "port": 22, "risk": "high"},
+                {"name": "HTTP", "port": 80, "risk": "medium"}
+            ]
+        },
+        {
+            "name": "Database Server",
+            "ip": "192.168.1.20",
+            "services": [
+                {"name": "MySQL", "port": 3306, "risk": "medium"},
+                {"name": "SSH", "port": 22, "risk": "high"}
+            ]
+        }
+    ]
+}
